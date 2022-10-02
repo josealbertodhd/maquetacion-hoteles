@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css" integrity="sha512-3PN6gfRNZEX4YFyz+sIyTF6pGlQiryJu9NlGhu9LrLMQ7eDjNgudQoFDK3WSNAayeIKc6B8WXXpo4a7HqxjKwg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>HotelesApp</title>
+</head>
+<body style="background-color: rgb(232, 229, 229);">
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+          <img src="../images/logo.png" alt="Logo del Aplicativo" width="100" height="50">
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link" href="#">Hoteles</a>
+              <a class="nav-link" href="tipo-habitaciones.html">Tipo de Habitaciones</a>
+              <a class="nav-link" href="acomodaciones.html">Acomodaciones</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <nav class="navbar navbar-expand-lg bg-light border-top border-gray-600">
+        <div class="container">
+          <a class="nav-link" href="#">Panel de Administración</a>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="d-flex justify-content-center mt-5">
+            <div class="card" style="width:100%;">
+              <div class="card-body">
+
+                <div class="d-flex text-center justify-content-between mb-4 p-2">
+                    <div class="d-flex">
+                        <h5 class="justify-content-center mx-3" style="font-size: 80px;"><i class="fas fa-hotel"></i></h5>
+                        <div class="d-flex flex-column align-items-start justify-content-center">
+                            <h3>DECAMERON BARRANQUILLA</h3>
+                            <p>Numero de Habitaciones: 20</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="m-5">
+
+                    <div class="row">
+                        <div class="form-group col">
+                            <label for="tipo-habitacion">Tipo de Habitacion</label>
+                            <select class="form-control" id="tipo-habitacion">
+                                <option>JUNIOR</option>
+                                <option>ESTANDAR</option>
+                                <option>SUITE</option>
+                                </select>
+                          </div>
+
+                          <div class="form-group col">
+                            <label for="acomodacion">Acomodacion</label>
+                            <select class="form-control" id="acomodacion">
+                                <option>SIMPLE</option>
+                                <option>DOBLE</option>
+                                <option>TRIPLE</option>
+                                <option>CUADRUPLE</option>
+                            </select>
+                          </div>
+                    </div>
+
+                    <div class="d-flex my-2">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Cantidad</label>
+                            <input type="text" class="form-control" placeholder="Ingrese Cantidad">
+                          </div>
+                    </div>
+
+
+                    <div class="container py-3">  
+                        <div class="d-grid gap-5 p-3 d-md-flex justify-content-md-end bg-light">
+                          <a href="#" class="btn btn-primary">Crear Habitacion</a>
+                        </div>
+                    </div>
+                  </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
